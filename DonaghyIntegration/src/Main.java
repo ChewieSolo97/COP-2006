@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-// decided to put general comments here, 
+// decided to put general comments here,
 // not sure where else would be better
 // Mitchell Donaghy last updated 4/20/17
 // for some reason when printing to PDF I can only go up to
@@ -1091,7 +1091,7 @@ public class Main {
         } else if (miscSelect == 11) {
           // followed the cave of programming video
           System.out.println("\nPolymorphism\n");
-          Plant plant1 = new Plant();
+         // Plant plant1 = new Plant();
           Tree tree = new Tree();
           Plant plant2 = tree;
           plant2.grow();
@@ -1262,7 +1262,12 @@ public class Main {
     System.out.println(d + moreStuff);
     System.out.println(s + otherStuff);
   }
-
+  /**
+   * 
+   * @param menuGreet
+   * @param menuSelection
+   * @return
+   */
   public static int doGlossary(String menuGreet,
       String menuSelection) {
     System.out.println("\n" + menuGreet + "Glossary\n");
@@ -1447,7 +1452,9 @@ public class Main {
       }
     }
   }
-
+  /**
+   * 
+   */
   public static void doInterestCalc() {
     System.out.println("This is a calculater for yearly"
         + " compounded interest.");

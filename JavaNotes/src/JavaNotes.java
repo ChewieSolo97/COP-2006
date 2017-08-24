@@ -385,7 +385,37 @@ public class JavaNotes {
     // System.out.println(grade);
 
     // udemy queues
+
+    // double[] Arr = { 1, 2, 3, 4, 5, 6, 7 };
+    // for (int i = 0; i < Arr.length; i++) {
+    // System.out.print(Arr[i] + "\t");
+    // }
+    // System.out.println("\n\n");
+    // FlipElements(Arr);
+
+    // for (int x = 0, y = 0; x < 3; x++,y++)
+    // System.out.printf(" %d, %d ",x, y++);
+
+    // int x = 0;
+    // while (true)
+    // {
+    // if (x == 3)
+    // break;
+    // System.out.printf(" %d, ",x++);
+    // }
   }
+
+  // public static void FlipElements(double[] Arr) {
+  // double evenElement = 0;
+  // for (int i = 0; i < (Arr.length - 1); i += 2) {
+  // evenElement = Arr[i];
+  // Arr[i] = Arr[i + 1];
+  // Arr[i + 1] = evenElement;
+  // }
+  // for (int i = 0; i < Arr.length; i++) {
+  // System.out.print(Arr[i] + "\t");
+  // }
+  // }
   // public static void doGrow(Plant plant) {
   // plant.grow();
   // }
