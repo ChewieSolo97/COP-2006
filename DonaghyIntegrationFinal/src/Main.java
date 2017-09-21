@@ -55,7 +55,8 @@ public class Main {
     // main "menu switch statement" (part in "" abbreviated
     // as MSS in future)
 
-    if (menuInput.equals("STOP")) {
+    if (menuInput.equals("STOP") || menuInput.equals("stop")) { 
+      // added stop in addition to STOP 
       System.out.println("\nProgram terminated");
     } else {
       switch (menuInput) {

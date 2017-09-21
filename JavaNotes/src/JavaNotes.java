@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //import java.util.NoSuchElementException;
 //import java.util.Queue;
 //import java.util.concurrent.ArrayBlockingQueue;
@@ -29,7 +31,7 @@ public class JavaNotes {
     // value = value + 1;
     // }
 
-    // edemy for loop
+    // udemy for loop
 
     // for (int i = 0; i < 5; i++) {
     // System.out.printf("The value of i is: %d\n", i);
@@ -402,8 +404,35 @@ public class JavaNotes {
     // if (x == 3)
     // break;
     // System.out.printf(" %d, ",x++);
-    // }
+
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Please enter a number");
+    double decimal = scan.nextDouble();
+    System.out.println("Please enter a base");
+    double base = scan.nextDouble();
+    
+    int[] arr = new int[20];
+    int k = 0;
+    boolean leadingZero = true;
+    
+    while(decimal / base > 0) {
+      arr[k] = (int) (decimal % base);
+      decimal = (int) (decimal / base);
+      k++;
+    }
+    
+    for(int j = arr.length -1; j >= 0; j--) {
+      if (leadingZero && arr[j] != 0) {
+        leadingZero = false;
+      }
+      if (!leadingZero) {
+        System.out.print(arr[j] + " ");
+      }
+    }
+    scan.close();
   }
+ 
 
   // public static void FlipElements(double[] Arr) {
   // double evenElement = 0;
